@@ -1,0 +1,78 @@
+.header{
+    height:60px;
+    display:flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+
+Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.  */
+/* sticky --I will stick to the screen when you reach my scroll position */
+/* Flex is the value of css display . By using display flex in parent element, child elements automatically align like column or row with auto width and auto height. */
+
+.header__logo{
+    width:100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+/* The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. */
+.header__search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+
+}
+.header__searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header__searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+
+}
+.header__optionLineOne{
+    font: size 10px;
+}
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+
+
+}
+.header__basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+
+Tip: Use the align-items property to align the items vertically. */
+.header__option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
